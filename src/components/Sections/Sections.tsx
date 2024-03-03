@@ -5,7 +5,7 @@ import AboutSection from './about/AboutSection'
 export default function Sections() {
     return (
 
-        <div className='relative border rounded'>
+        <div className='relative border-2 rounded'>
             <NavBar />
 
             <div className=" px-5">

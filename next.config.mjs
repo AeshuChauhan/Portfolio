@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
-                hostname: 'bachelorexam.com',
+                hostname: 'images.unsplash.com',
             },
         ],
     }
