@@ -14,7 +14,8 @@ import {
 
 export function NavBar() {
     return (
-        <div className="h-16 md:h-12 w-full md:w-min float-end fixed md:sticky bottom-0 md:top-0 left-0 right-0 border-t-4  md:border-b-4 md:border-t-0 border-yellow-500 rounded">
+
+        <div className="h-16 md:h-12 bg-slate-950 float-end z-40 md:bg-auto fixed md:absolute bottom-0 md:top-0 left-0 right-0 border-t-4  md:border-b-4 md:border-t-0 border-yellow-500 rounded ">
             <div className="h-16 md:h-12 flex flex-col items-center justify-center md:items-end">
                 <div>
                     <NavigationMenu>
@@ -58,6 +59,7 @@ export function NavBar() {
             </div>
 
         </div>
+
     )
 }
 
