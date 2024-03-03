@@ -14,9 +14,8 @@ import {
 
 export function NavBar() {
     return (
-        // <>
-        <div className="fixed bottom-0 h-12 md:top-0 left-0 right-0 border-t-4  md:border-b-4 md:border-t-0 border-yellow-500">
-            <div className="flex flex-col items-center justify-center md:items-end">
+        <div className="h-16 md:h-12 w-full md:w-min float-end fixed md:sticky bottom-0 md:top-0 left-0 right-0 border-t-4  md:border-b-4 md:border-t-0 border-yellow-500 rounded">
+            <div className="h-16 md:h-12 flex flex-col items-center justify-center md:items-end">
                 <div>
                     <NavigationMenu>
                         <NavigationMenuList>
@@ -38,7 +37,7 @@ export function NavBar() {
                             </NavigationMenuItem>
 
                             <NavigationMenuItem>
-                                <Link href="/docs" legacyBehavior passHref>
+                                <Link href="/" legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                         <span className="font-bold">Projects</span>
                                     </NavigationMenuLink>
@@ -46,7 +45,7 @@ export function NavBar() {
                             </NavigationMenuItem>
 
                             <NavigationMenuItem>
-                                <Link href="/docs" legacyBehavior passHref>
+                                <Link href="/" legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                         <span className="font-bold">Contact</span>
                                     </NavigationMenuLink>
@@ -59,7 +58,6 @@ export function NavBar() {
             </div>
 
         </div>
-        // </>
     )
 }
 

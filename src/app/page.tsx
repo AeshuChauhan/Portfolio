@@ -1,16 +1,18 @@
-import About from "@/components/about/About";
-import { NavBar } from "@/components/navbar/NavBar";
+import UserInfo from "@/components/user-info/Info";
+import Sections from "@/components/Sections/Sections";
 // import Image from "next/image";
 
 export default function Home() {
   return (
-    <main >
-      {/* Header NavBar */}
-      <NavBar />
+    <div className="container">
+      <main className="m-5 grid gap-y-5">
+        {/* About Us Component */}
+        <UserInfo />
+        {/* Header NavBar */}
+        <Sections />
 
-      {/* About Us Component */}
-      <About />
-      <div className="divide"></div>
-    </main>
+        {/* <StickyScrollRevealDemo /> */}
+      </main>
+    </div>
   );
 }

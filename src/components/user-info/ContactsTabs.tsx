@@ -1,5 +1,3 @@
-"use client";
-
 interface ContactsTabsProps {
     title: string;
     info: string;
@@ -9,9 +7,7 @@ interface ContactsTabsProps {
 export function ContactsTabs({ title, info, icon }: ContactsTabsProps) {
     return <div className='flex gap-5'>
         <div className='shadow-md shadow-yellow-500/40 px-3 p-3 border-2 rounded-lg'>
-            {/* <MdOutlineMail size={25} /> */}
             {icon}
-
         </div>
         <div className='flex flex-col justify-center'>
             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{title}</p>

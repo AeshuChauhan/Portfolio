@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { GrMapLocation } from 'react-icons/gr';
 import { ContactsTabs } from './ContactsTabs';
 import { motion } from 'framer-motion';
-export default function About() {
+export default function UserInfo() {
     const [show, setShow] = useState(false);
 
     return (
@@ -18,7 +18,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 2, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="m-3 md:mx-5 md:my-14 relative px-5 border-2 rounded">
+            className="relative px-5 border-2 rounded">
 
             <motion.button
                 className="p-1 absolute right-0 top-0 border-l-2 shadow-md shadow-yellow-500/40 border-b-2 rounded-lg"
@@ -28,7 +28,7 @@ export default function About() {
             </motion.button>
 
             <div className='flex'>
-                <div className="p-3 md:p-3">
+                <div className="pt-3">
                     <Image className="h-full w-32 rounded-lg"
                         src="http://bachelorexam.com/wp-content/uploads/2023/11/Aeshu-Chauhan.jpg"
                         alt="Modern building architecture"
@@ -65,8 +65,6 @@ export default function About() {
                 className='gap-5'
             >
                 <motion.div className="grid md:grid-cols-2 gap-y-4 border-t-2 my-5 pt-5">
-                    {/* <div className="border-b-2" /> */}
-
                     <ContactsTabs
                         title={"Email"}
                         info={"aeshuchauhan@gmail.com"}
@@ -88,9 +86,7 @@ export default function About() {
                         info={"9897361666"}
                         icon={<FaWhatsapp size={25} />}
                     />
-
                 </motion.div>
-
             </motion.div>}
         </motion.div >
 
