@@ -3,6 +3,7 @@ import { TextGenerate } from './AboutMe'
 import { SkillTooltip } from './SkillsToolTip'
 import skillData from '@/utils/skillData'
 import { FaDownload } from 'react-icons/fa';
+import { Button } from '@/components/ui/MovingButton';
 export default function AboutSection() {
     const { programmingLanguage, frontEnd, backEnd, db, otherTool } = skillData();
     return (
@@ -20,11 +21,13 @@ export default function AboutSection() {
                             <div className='mt-1 w-12 border-b-2 rounded-lg border-cyan-600 shadow-md shadow-yellow-500/40'></div>
                         </div>
                         <div>
-                            <button className='flex gap-3 me-1'>
+                            <Button
+                                className="flex gap-3 px-3 py-1 bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                            >
                                 <span className='text-lg font-bold text-yellow-500 hidden sm:block'>Resume</span>
                                 <FaDownload size={20} className='text-cyan-500' />
-                            </button>
-                            <div className='mt-1 w-12 border-b-2 rounded-lg hidden sm:block border-cyan-600 shadow-md shadow-yellow-500/40'></div>
+                            </Button>
+
 
                         </div>
                     </div>
